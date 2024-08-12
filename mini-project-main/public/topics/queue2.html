@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1> Different Types of Queue</h1>
+        <nav>
+            <ul>
+                <li><a href="#" id="intro-link">Introduction</a></li>
+                <li><a href="#" id="video-link">Video-Tutorial</a></li>
+                <li><a href="quiz/queue2.html" id="quiz-link">Assessment</a></li>
+                
+            </ul>
+        </nav>
+        </header>
+        <main>
+            <section id="intro">
+                <h2>Introduction :</h2>
+                <p>A Queue is a linear structure that follows a particular order in which the operations are performed. The order is First In First Out (FIFO). A good example of a queue is any queue of consumers for a resource where the consumer that came first is served first. In this article, the different types of queues are discussed. </p>
+                <h2>Types of Queues:</h2>
+                <p>There are five different types of queues that are used in different scenarios. They are:</p>
+                <ul>
+                    <li>Input Restricted Queue (this is a Simple Queue)</li>
+                    <li>Output Restricted Queue (this is also a Simple Queue)</li>
+                    <li>Circular Queue</li>
+                    <li>Double Ended Queue (Deque)
+                    </li>
+                    <li>Priority Queue</li>
+                </ul>
+                <h3>1. Circular Queue: </h3>
+                <p>Circular Queue is a linear data structure in which the operations are performed based on FIFO (First In First Out) principle and the last position is connected back to the first position to make a circle. It is also called ‘Ring Buffer’. This queue is primarily used in the following cases:</p>
+                <ul>
+                    <li>Memory Management: The unused memory locations in the case of ordinary queues can be utilized in circular queues.</li>
+                    <li>Traffic system: In a computer-controlled traffic system, circular queues are used to switch on the traffic lights one by one repeatedly as per the time set.</li>
+                    <li>CPU Scheduling: Operating systems often maintain a queue of processes that are ready to execute or that are waiting for a particular event to occur.</li>
+                </ul>
+                <h3>2. Input restricted Queue:</h3>
+                <p>In this type of Queue, the input can be taken from one side only(rear) and deletion of elements can be done from both sides(front and rear). This kind of Queue does not follow FIFO(first in first out).  This queue is used in cases where the consumption of the data needs to be in FIFO order but if there is a need to remove the recently inserted data for some reason and one such case can be irrelevant data, performance issue, etc. </p>
+                <h3>3. Output restricted Queue:</h3>
+                <p>In this type of Queue, the input can be taken from both sides(rear and front) and the deletion of the element can be done from only one side(front).  This queue is used in the case where the inputs have some priority order to be executed and the input can be placed even in the first place so that it is executed first. </p>
+                <h3>4. Double ended Queue:</h3>
+                <p> Double Ended Queue is also a Queue data structure in which the insertion and deletion operations are performed at both the ends (front and rear). That means, we can insert at both front and rear positions and can delete from both front and rear positions.  Since Deque supports both stack and queue operations, it can be used as both. The Deque data structure supports clockwise and anticlockwise rotations in O(1) time which can be useful in certain applications. Also, the problems where elements need to be removed and or added both ends can be efficiently solved using Deque.</p>
+                <h3>5. Priority Queue:</h3>
+                <p>A priority queue is a special type of queue in which each element is associated with a priority and is served according to its priority. There are two types of Priority Queues. They are:</p>
+                <ul>
+                    <li>Ascending Priority Queue: Element can be inserted arbitrarily but only smallest element can be removed. For example, suppose there is an array having elements 4, 2, 8 in the same order. So, while inserting the elements, the insertion will be in the same sequence but while deleting, the order will be 2, 4, 8.</li>
+                    <li>Descending priority Queue: Element can be inserted arbitrarily but only the largest element can be removed first from the given Queue. For example, suppose there is an array having elements 4, 2, 8 in the same order. So, while inserting the elements, the insertion will be in the same sequence but while deleting, the order will be 8, 4, 2.</li>
+                </ul>
+            </section>
+            <section id="video">
+                <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/dn01XST9-bI?si=w9Y72SCZdwrVHMZ1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/40Ttkii9NPA?si=m90ZTOYMrE1UAQI0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/pqg0SOPRlJ4?si=jgfoFub4_aDz83fG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/WJres9mgiAk?si=oX0bcPVuzX3rt3hQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+
+            </section>
+            
+        </main>
+        <script src="script.js"></script>
+</body>
+</html>

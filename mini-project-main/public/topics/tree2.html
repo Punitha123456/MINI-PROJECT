@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Binary Tree & Binary Search Tree</h1>
+        <nav>
+            <ul>
+                <li><a href="#" id="intro-link">Introduction</a></li>
+                <li><a href="#" id="video-link">Video-Tutorial</a></li>
+                <li><a href="quiz/tree2.html" id="quiz-link">Assessment</a></li>
+                
+            </ul>
+        </nav>
+        </header>
+        <main>
+            <section id="intro">
+                <h2>What is Binary Tree?</h2>
+                <p>Binary tree is a tree data structure(non-linear) in which each node can have at most two children which are referred to as the left child and the right child. </p>
+                <p>The topmost node in a binary tree is called the root, and the bottom-most nodes are called leaves. A binary tree can be visualized as a hierarchical structure with the root at the top and the leaves at the bottom.</p>
+                <h2>Representation of Binary Tree</h2>
+                <p>Each node in a Binary Tree has three parts:</p>
+                <ul>
+                    <li>DataData</li>
+                    <li>Pointer to the left child</li>
+                    <li>Pointer to the right child</li>
+                </ul>
+                <h2>Operations On Binary Tree</h2>
+                <h3>1. Insertion in Binary Tree</h3>
+                <p>We can insert a node anywhere in a binary tree by inserting the node as the left or right child of any node or by making the node as root of the tree.
+
+                </p>
+                <ul>
+                    <li>Check if there is a node in the binary tree, which has missing left child. If such a node exists, then insert the new node as its left child.</li>
+                    <li>Check if there is a node in the binary tree, which has missing right child. If such a node exists, then insert the new node as its right child.</li>
+                    <li>If we don't find any node with missing left or right child, then find the node which has both the children missing and insert the node as its left or right child.</li>
+                </ul>
+                <h3>2. Traversal of Binary Tree</h3>
+                <p>Traversal of Binary Tree involves visiting all the nodes of the binary tree. Tree Traversal algorithms can be classified broadly into two categories:</p>
+                <ul>
+                    <li>Depth-First Search (DFS) Algorithms</li>
+                    <li>Breadth-First Search (BFS) Algorithms</li>
+                </ul>
+
+                <h2>Binary Search Tree</h2>
+                <p>A Binary Search Tree is a data structure used in computer science for organizing and storing data in a sorted manner. Each node in a Binary Search Tree has at most two children, a left child and a right child, with the left child containing values less than the parent node and the right child containing values greater than the parent node. This hierarchical structure allows for efficient searching, insertion, and deletion operations on the data stored in the tree.</p>
+                <h2>Properties of Binary Search Tree:</h2>
+                <ul>
+                    <li>The left subtree of a node contains only nodes with keys lesser than the node’s key.</li>
+                    <li>he right subtree of a node contains only nodes with keys greater than the node’s key.</li>
+                    <li>This means everything to the left of the root is less than the value of the root and everything to the right of the root is greater than the value of the root. Due to this performing, a binary search is very easy.</li>
+                    <li>The left and right subtree each must also be a binary search tree.  </li>
+                    <li>There must be no duplicate nodes(BST may have duplicate values with different handling approaches)</li>
+                </ul>
+            </section>
+            <section id="video">
+                <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/6vt3PFRC11E?si=VYMCeL0kiuB2qwXR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/zDlTxrEwxvg?si=_KFkioN6qd5Qqd3g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/e_Wv_pH4Se8?si=KTBM_rGoDEuiTDqk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/GW63gMgfeS8?si=TAz4mhOnV0PBG3Xe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/RttBwUVWfV8?si=45Z1nnGx3VPzNUX9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </section>
+            
+        </main>
+        <script src="script.js"></script>
+</body>
+</html>

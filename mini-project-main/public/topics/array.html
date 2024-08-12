@@ -1,0 +1,101 @@
+
+<!--array.html-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+    <link rel="stylesheet" href="styles.css">
+    </head>
+<body>
+    
+    <header>
+        <h1>Array</h1>
+        <nav>
+            <ul style="color:white">
+                <li><a href="#" id="intro-link">Introduction</a></li>
+                <li><a href="#" id="video-link">Video-Tutorial</a></li>
+                <li><a href="quiz/array.html" id="quiz-link">Assessment</a></li>
+                
+            </ul>
+        </nav>
+        </header>
+        
+        <main>            
+            <section id="intro">
+                <h2>What is Array?</h2>
+                <p>Array is a linear data structure where all elements are arranged sequentially. It is a collection of elements of same data type stored at contiguous memory locations. </p>
+                <p>For simplicity, we can think of an array as a flight of stairs where on each step is placed a value (let’s say one of your friends). Here, you can identify the location of any of your friends by simply knowing the count of the step they are on. </p>
+                <p>This makes it easier to calculate the position of each element by simply adding an offset to a base value, i.e., the memory location of the first element of the array (generally denoted by the name of the array). The base value is index 0 and the difference between the two indexes is the offset.</p>
+                <h3>Is the array always of a fixed size?</h3>
+                <p>In C language, the array has a fixed size meaning once the size is given to it, it cannot be changed i.e. you can’t shrink it nor can you expand it. The reason was that for expanding if we change the size we can’t be sure ( it’s not possible every time) that we get the next memory location to us for free. The shrinking will not work because the array, when declared, gets memory statically allocated, and thus compiler is the only one that can destroy it. </p>
+
+
+                <h2>Declaration of Array</h2>
+                <p>Arrays can be declared in various ways in different languages. For better illustration, below are some language-specific array declarations:</p>
+                <pre>
+        // This array will store integer type element
+        int arr[5];      
+        // This array will store char type element
+        char arr[10];   
+        // This array will store float type element
+        float arr[20];  
+                </pre>
+
+                <h2>Initialization of Array</h2>
+                <pre>
+        int arr[] = { 1, 2, 3, 4, 5 };
+        char arr[5] = { 'a', 'b', 'c', 'd', 'e' };
+        float arr[10] = { 1.4, 2.0, 24, 5.0, 0.0 };
+                </pre>
+
+                <h2>Importance of Array</h2>
+                <p>Assume there is a class of five students and if we have to keep records of their marks in examination then, we can do this by declaring five variables individual and keeping track of records but what if the number of students becomes very large, it would be challenging to manipulate and maintain the data.
+
+                    What it means is that, we can use normal variables (v1, v2, v3, ..) when we have a small number of objects. But if we want to store a large number of instances, it becomes difficult to manage them with normal variables. The idea of an array is to represent many instances in one variable.</p>
+                <h2>Types of Arrays</h2>
+                <p>Arrays can be classified in two ways:</p>
+                <ul>
+                    <li>On the basis of Memory Allocation</li>
+                    <li>On the basis of Dimensions</li>
+                </ul>
+                <h2>Types of Arrays on the basis of Memory Allocation:</h2>
+                <h3>1.Static Arrays</h3>
+                <p>In this type of array, memory is allocated at compile time having a fixed size of it. We cannot alter or update the size of this array. This type of memory allocation is also known as static or compile-time memory allocation. Here only a fixed size (i,e. the size that is mentioned in square brackets []) of memory will be allocated for storage. In case, we don’t know the size of the array then if we declare a larger size and store a lesser number of elements will result in a wastage of memory or or we declare a lesser size than the number of elements then we won’t get enough memory to store all the elements. In such cases, static memory allocation is not preferred.</p>
+                <pre>
+        //Static Integer Array
+        int arr[5] = {1, 2, 3, 4, 5}; 
+                </pre>
+                <h3>2. Dynamic Arrays:</h3>
+                <p>In this type of array, memory is allocated at run time but not having a fixed size. Suppose, a user wants to declare any random size of an array, then we will not use a static array, instead of that a dynamic array is used. This type of memory allocation is also known as dynamic or run-time memory allocation. It is used to specify the size of it during the run time of any program.</p>
+                <pre>
+         // Dynamic Integer Array
+        int* arr = malloc(sizeof(int) * 5);
+                </pre>
+            </section>
+        
+            <section id="video">
+                <h2>Array</h2>
+                    <div class="video-container">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/AT14lCXuMKI?si=gIw93O02BW0o-D4L" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="video-container">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/Bnjbun-hiBk?si=NcMVPsR1ENGXKcK-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="video-container">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/CMbpZK_xqoc?si=fCrQPn7orT-KyE3r" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+
+            </section>
+            
+            
+            
+        </main>
+    <script src="script.js"></script>
+    
+    
+    
+</body>
+</html>

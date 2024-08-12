@@ -1,0 +1,163 @@
+
+<!--array2.html-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Two-Dimensional Array</h1>
+        <nav>
+            <ul>
+                <li><a href="#" id="intro-link">Introduction</a></li>
+                <li><a href="#" id="video-link">Video-Tutorial</a></li>
+                <li><a href="quiz/array2.html" id="quiz-link">Assessment</a></li>
+                
+            </ul>
+        </nav>
+        </header>
+        <main>
+            <section id="intro">
+                <h2>2-Dimensional Array</h2>
+                <p>Matrix Data Structure is a two-dimensional array arranged in rows and columns. It is commonly used to represent mathematical matrices and is fundamental in various fields like mathematics, computer graphics, and data processing. Matrices allow for efficient storage and manipulation of data in a structured format.
+
+                </p>
+                <h2>What is Matrix Data Structure?</h2>
+                <p>Matrix  is a two-dimensional array or table consisting of rows and columns. The intersection of a row and column is called a cell. All the data is stored across different cells in the matrix. Matrix data structure is used when we want to store data in the form of table or grid. Each element in a matrix is identified by its row and column indices.</p>
+                
+                
+                
+                <h2>Declaration of Matrix Data Structure :</h2>
+                <pre>
+        #include
+
+        int main() {
+            // Defining number of rows and columns in matrix
+            int number_of_rows = 3, number_of_columns = 3;
+            // Array Declaration
+            int arr[number_of_rows][number_of_columns];
+                          
+            return 0;
+        }
+                </pre>
+
+                <h2>Initializing Matrix Data Structure:</h2>
+                <pre>
+         #include
+
+        int main() {
+                        
+            // Initializing a 2-D array with values
+            int arr[3][3] = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
+            return 0;
+        }
+                </pre>
+
+                <h2>Operations on Matrix Data Structure:</h2>
+                <p>We can perform a variety of operations on the Matrix Data Structure. Some of the most common operations are:</p>
+                <ul>
+                    <li>Access elements of Matrix</li>
+                    <li>Traversal of a Matrix</li>
+                    <li>Searching in a Matrix</li>
+                    <li>Sorting a Matrix</li>
+                </ul>
+                <h2>1. Access elements of Matrix Data Structure:</h2>
+                <p>Like one-dimensional arrays, matrices can be accessed randomly by using their indices to access the individual elements. A cell has two indices, one for its row number, and the other for its column number. We can use arr[i][j] to access the element which is at the ith row and jth column of the matrix.</p>
+                <pre>
+            #include
+
+            int main()
+            {
+                // Initializing a 2-D array with values
+                int arr[3][3]
+                     = { { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 } };
+                        
+                // Accessing elements of 2-D array
+                printf("First element of first row: %d\n", arr[0][0]);
+                printf("Third element of second row: %d\n", arr[1][2]);
+                printf("Second element of third row: %d\n", arr[2][1]);
+                return 0;
+            }
+                </pre>
+                <h2>2. Traversal of a Matrix Data Structure:</h2>
+                <p>We can traverse all the elements of a matrix or two-dimensional array by using two for-loops.</p>
+                <pre>
+            include
+
+            int main()
+            {
+                        
+                int arr[3][4] = { { 1, 2, 3, 4 },
+                                { 5, 6, 7, 8 },
+                                { 9, 10, 11, 12 } };
+                // Traversing over all the rows
+                for (int i = 0; i < 3; i++) {
+                // Traversing over all the columns of each row
+                for (int j = 0; j < 4; j++) {
+                    printf("%d ", arr[i][j]);
+                }
+                    printf("\n");
+                    }
+                return 0;
+            }
+                </pre>
+                <h2>3. Searching in a Matrix Data Structure:</h2>
+                <p>We can search an element in a matrix by traversing all the elements of the matrix.
+
+                    Below is the implementation to search an element in a matrix:</p>
+                <pre>
+            #include
+            using namespace std;
+                    
+            bool searchInMatrix(vector<vector<int> >& arr, int x)
+            {
+                int m = arr.size(), n = arr[0].size();
+                    
+                for (int i = 0; i < m; i++) {
+                    for (int j = 0; j < n; j++) {
+                        if (arr[i][j] == x)
+                            return true;
+                    }
+                }
+                return false;
+            }
+                    
+            // Driver program to test above
+            int main()
+            {
+                int x = 8;
+                vector<vector<int> > arr
+                    = { { 0, 6, 8, 9, 11 },
+                        { 20, 22, 28, 29, 31 },
+                        { 36, 38, 50, 61, 63 },
+                        { 64, 66, 100, 122, 128 } };
+                    
+                if (searchInMatrix(arr, x))
+                    cout << "YES" << endl;
+                else
+                    cout << "NO" << endl;
+                    
+                return 0;
+            }
+                </pre>
+            </section>
+            <section id="video">
+                <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/KDQXUysHLL8?si=mEbD5Mi7z7Iio2K6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/tw-qWGG8y5g?si=zZN5IndW1ZFD5aDW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </section>
+            
+        </main>
+        <script src="script.js"></script>
+        
+        
+</body>
+</html>

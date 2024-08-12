@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Linkedlist</h1>
+        <nav>
+            <ul>
+                <li><a href="#" id="intro-link">Introduction</a></li>
+                <li><a href="#" id="video-link">Video-Tutorial</a></li>
+                <li><a href="quiz/linkedlist.html" id="quiz-link">Assessment</a></li>
+                
+            </ul>
+        </nav>
+        </header>
+        
+        <main>
+            <section id="intro">
+                <h2>Linked List Data Structure</h2>
+                <p>A linked list is a fundamental data structure in computer science. It consists of nodes where each node contains data and a reference (link) to the next node in the sequence. This allows for dynamic memory allocation and efficient insertion and deletion operations compared to arrays.
+
+                </p>
+                <h2>What is a Linked List?</h2>
+                <p>A linked list is a linear data structure that consists of a series of nodes connected by pointers. Each node contains data and a reference to the next node in the list. Unlike arrays, linked lists allow for efficient insertion or removal of elements from any position in the list, as the nodes are not stored contiguously in memory.</p>
+                <h2>Basic Terminologies of Linked List:</h2>
+                <ul>
+                    <li>Head: The Head of a linked list is a pointer to the first node or reference of the first node of linked list. This pointer marks the beginning of the linked list.</li>
+                    <li>Node: Linked List consists of a series of nodes where each node has two parts: data and next pointer.</li>
+                    <li>Data: Data is the part of node which stores the information in the linked list.</li>
+                    <li>Next pointer: Next pointer is the part of the node which points to the next node of the linked list.</li>
+                </ul>
+                <h2>Types of Linked List:</h2>
+                <p>There are mainly three types of linked lists:</p>
+                <ul>
+                    <li>Singly linked list</li>
+                    <li>Doubly linked list</li>
+                    <li>Circular linked list</li>
+                </ul>
+                <h2>1. Singly Linked List:</h2>
+                <p>Singly Linked List is a type of linked list where each node has two parts: data and next pointer. The data part stores the information and the next pointer points to the next node of the linked list. The next pointer of the last node stores null as it is the last node of the linked list and there is no next node. Traversal of items can be done in the forward direction only due to the linking of every node to its next node.</p>
+                <h3>Node Definition of Singly linked list:</h3>
+                <pre>
+            // Singly linked list node
+            struct Node {
+                int data;
+                struct Node* next;
+            };
+                </pre>
+
+                <h2>Operations on Singly Linked List:</h2>
+                <p>The following operations are performed on a Single Linked List</p>
+                <ul>
+                    <li>Insertion: The insertion operation can be performed in three ways. They are as follows…</li>
+                    <ul>
+                        <li>Inserting At the Beginning of the list</li>
+                        <li>Inserting At End of the list</li>
+                        <li>Inserting At Specific location in the list</li>
+                    </ul>
+                    <li>Deletion: The deletion operation can be performed in three ways. They are as follows…</li>
+                    <ul>
+                        <li>Deleting from the Beginning of the list</li>
+                        <li>Deleting from the End of the list</li>
+                        <li>Deleting a Specific Node</li>
+                    </ul>
+                    <li>Search: It is a process of determining and retrieving a specific node either from the front, the end or anywhere in the list.</li>
+                    <li>Display: This process displays the elements of a Single-linked list.</li>
+                </ul>
+            </section>
+        
+            <section id="video">
+                <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/dmb1i4oN5oE?si=iddhb1iYzLSlkKtQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/6wXZ_m3SbEs?si=o0piGcbumt86FmVN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/dq3F3e9o2DM?si=R_Tj-7QnOHVhW2ZD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/ClvYytk5Rlg?si=vSgoo0cy8XKH8KbV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+
+            </section>
+        
+            
+        
+        </main>
+        <script src="script.js"></script>
+        
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Doubly Linked List</h1>
+        <nav>
+            <ul>
+                <li><a href="#" id="intro-link">Introduction</a></li>
+                <li><a href="#" id="video-link">Video-Tutorial</a></li>
+                <li><a href="quiz/linkedlist2.html" id="quiz-link">Assessment</a></li>
+                
+            </ul>
+        </nav>
+        </header>
+        <main>
+            <section id="intro">
+                <h2>What is doubly linked list?</h2>
+                <p>A doubly linked list is a more complex data structure than a singly linked list, but it offers several advantages. The main advantage of a doubly linked list is that it allows for efficient traversal of the list in both directions. This is because each node in the list contains a pointer to the previous node and a pointer to the next node. This allows for quick and easy insertion and deletion of nodes from the list, as well as efficient traversal of the list in both directions.</p>
+                <h2>Representation of Doubly Linked List in Data Structure:</h2>
+                <p>In a data structure, a doubly linked list is represented using nodes that have three fields:</p>
+                <ul>
+                    <li>Data</li>
+                    <li>A pointer to the next node (next)</li>
+                    <li>A pointer to the previous node (prev).</li>
+                </ul>
+                <h2>Node Definition:</h2>
+                <p>Here is how a node in a Doubly Linked List is typically represented:</p>
+                <pre>
+            struct Node {
+
+                // To store the Value or data.
+                int data;
+                    
+                // Pointer to point the Previous Element
+                Node* prev;
+                    
+                // Pointer to point the Next Element
+                Node* next;
+            };
+                </pre>
+                <p>Each node in a Doubly Linked List contains the data it holds, a pointer to the next node in the list, and a pointer to the previous node in the list. By linking these nodes together through the next and prev pointers, we can traverse the list in both directions (forward and backward), which is a key feature of a Doubly Linked List.</p>
+                <h2>Operations on Doubly Linked List:</h2>
+                <ul>
+                    <li>Traversal in Doubly Linked List</li>
+                    <li>Searching in Doubly Linked List</li>
+                    <li>Finding Length of Doubly Linked List</li>
+                    <li>Insertion in Doubly Linked List:</li>
+                    <li>Deletion in Doubly Linked List:</li>
+                </ul>
+                <h2>How We Can Create a Doubly Linked List in C?</h2>
+                <p>To create a Doubly Linked List in C, you need to define a structure that represents each node in the list. Each node should contain pointers to the previous and next nodes. Then, you can define functions to perform operations such as insertion, deletion, and traversal on the doubly linked list.</p>
+                <h3>1. Representation</h3>
+                <p>The doubly linked list node can be represented as a structure in C language. The below structure represents the minimal doubly linked list:</p>
+                <pre>
+                    typedef struct node {
+                    int data;
+                    struct node* next;
+                    struct node* prev;
+                    } Node;
+                </pre>
+                <p>Here,</p>
+                <ul>
+                    <li>data: data field of the node.</li>
+                    <li>next: pointer to the next node.</li>
+                    <li>prev: pointer to the prev node.</li>
+                </ul>
+                <p>The nodes at the ends (i.e. does not have a previous or next node) will be set as NULL.</p>
+                <p>We can then use this data type with malloc() to dynamically create the instances of the doubly linked list node and then join them inside insertion operations.</p>
+                <p>The whole doubly linked list will be represented as the pointer to the head node (i.e. starting node) as all the nodes can be traversed using this node. We can also maintain a pointer to the end node for our convenience.</p>
+                <h2>Introduction to Circular Linked List</h2>
+                <p>he circular linked list is a linked list where all nodes are connected to form a circle. In a circular linked list, the first node and the last node are connected to each other which forms a circle. There is no NULL at the end.</p>
+                <p>There are generally two types of circular linked lists:</p>
+                <ul>
+                    <li>Circular singly linked list: In a circular Singly linked list, the last node of the list contains a pointer to the first node of the list. We traverse the circular singly linked list until we reach the same node where we started. The circular singly linked list has no beginning or end. No null value is present in the next part of any of the nodes.</li>
+                    <li>Circular Doubly linked list: Circular Doubly Linked List has properties of both doubly linked list and circular linked list in which two consecutive elements are linked or connected by the previous and next pointer and the last node points to the first node by the next pointer and also the first node points to the last node by the previous pointer.</li>
+                </ul>
+                
+            </section>
+            <section id="video">
+                <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/nquQ_fYGGA4?si=bBvbIGUe3WX6Uvrc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/H8-IuKKiQeo?si=b6ECgg3A5QpLDzTn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/fmfx1C4TTxw?si=meLQrKh64EumU-AD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/jsTybZ5qSNE?si=7oDshWuL87zg8zr2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/eBCTtS_sptM?si=CTtMDneNCsdZDzs3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+
+            </section>
+            
+        </main>
+        <script src="script.js"></script>
+</body>
+</html>

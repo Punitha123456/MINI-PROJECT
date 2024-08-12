@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Queue Data structure</h1>
+        <nav>
+            <ul>
+                <li><a href="#" id="intro-link">Introduction</a></li>
+                <li><a href="#" id="video-link">Video-Tutorial</a></li>
+                <li><a href="quiz/queue.html" id="quiz-link">Assessment</a></li>
+                
+            </ul>
+        </nav>
+        </header>
+        <main>
+            <section id="intro">
+                <h2>What is Queue in Data Structures?</h2>
+                <p>A Queue Data Structure is a fundamental concept in computer science used for storing and managing data in a specific order. It follows the principle of “First in, First out” (FIFO), where the first element added to the queue is the first one to be removed. Queues are commonly used in various algorithms and applications for their simplicity and efficiency in managing data flow.</p>
+                <h2>FIFO Principle of Queue Data Structure:</h2>
+                <ul>
+                    <li>A Queue is like a line waiting to purchase tickets, where the first person in line is the first person served. (i.e. First Come First Serve).</li>
+                    <li>Position of the entry in a queue ready to be served, that is, the first entry that will be removed from the queue, is called the front of the queue(sometimes, head of the queue). Similarly, the position of the last entry in the queue, that is, the one most recently added, is called the rear (or the tail) of the queue.</li>
+                </ul>
+                <h2>Types of Queue Data Structure:</h2>
+                <p>Queue data structure can be classified into 4 types:</p>
+                <ul>
+                    <li>Simple Queue: Simple Queue simply follows FIFO Structure. We can only insert the element at the back and remove the element from the front of the queue.</li>
+                    <li>Double-Ended Queue (Dequeue): In a double-ended queue the insertion and deletion operations, both can be performed from both ends</li>
+                    <li>Circular Queue: This is a special type of queue where the last position is connected back to the first position. Here also the operations are performed in FIFO order.</li>
+                    <li>Priority Queue: A priority queue is a special queue where the elements are accessed based on the priority assigned to them.</li>
+                </ul>
+                <h2>Basic Operations in Queue Data Structure:</h2>
+                <p>Some of the basic operations for Queue in Data Structure are:</p>
+                <ul>
+                    <li>Enqueue: Adds (or stores) an element to the end of the queue..</li>
+                    <li>Dequeue: Removal of elements from the queue.</li>
+                    <li>Peek or front: Acquires the data element available at the front node of the queue without deleting it.</li>
+                    <li>rear: This operation returns the element at the rear end without removing it.</li>
+                    <li>isFull: Validates if the queue is full.</li>
+                    <li>isEmpty: Checks if the queue is empty.</li>
+                </ul>
+                <h3>1. Enqueue Operation in Queue Data Structure: </h3>
+                <p>Enqueue() operation in Queue adds (or stores) an element to the end of the queue.
+                    The following steps should be taken to enqueue (insert) data into a queue:</p>
+                <ul>
+                    <li>Step 1: Check if the queue is full.</li>
+                    <li>Step 2: If the queue is full, return overflow error and exit.</li>
+                    <li>Step 3: If the queue is not full, increment the rear pointer to point to the next empty space.</li>
+                    <li>Step 4: Add the data element to the queue location, where the rear is pointing.</li>
+                    <li>Step 5: return success.</li>
+                </ul>
+                <pre>
+/ Function to add an item to the queue.
+// It changes rear and size
+void enqueue(struct Queue* queue, int item)
+{
+    if (isFull(queue))
+        return;
+    queue->rear = (queue->rear + 1) % queue->capacity;
+    queue->array[queue->rear] = item;
+    queue->size = queue->size + 1;
+    printf("%d enqueued to queue\n", item);
+}
+                </pre>
+                <h3>2. Dequeue Operation in Queue Data Structure: </h3>
+                <p>Removes (or access) the first element from the queue.
+                    The following steps are taken to perform the dequeue operation:</p>
+                <ul>
+                    <li>Step 1: Check if the queue is empty.</li>
+                    <li>Step 2: If the queue is empty, return the underflow error and exit.</li>
+                    <li>Step 3: If the queue is not empty, access the data where the front is pointing.</li>
+                    <li>Step 4: Increment the front pointer to point to the next available data element.</li>
+                    <li>Step 5: The Return success</li>
+                </ul>
+                <pre>
+// Function to remove an item from queue.
+// It changes front and size
+int dequeue(struct Queue* queue)
+{
+    if (isEmpty(queue)) {
+        printf("\nQueue is empty\n");
+        return;
+    }
+    int item = queue->array[queue->front];
+    queue->front = (queue->front + 1) % queue->capacity;
+    queue->size = queue->size - 1;
+    return item;
+}
+                </pre>
+            </section>
+            <section id="video">
+                <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/zp6pBNbUB2U?si=U16QLJE3Uwxm4AQo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/YqrFeU90Coo?si=YPqaQSj2hI-Ca-8p" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/RN1wzY_tnYU?si=SIvxzBq2ATrs5O9G" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/EFO7bbFcOMw?si=9acIBJ7du-8-kLbI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </section>
+            
+        </main>
+        <script src="script.js"></script>
+</body>
+</html>
